@@ -1,0 +1,37 @@
+/*^ about */
+.about {
+  // width: 100%;
+  background-color: var(--secondary-bg-color);
+}
+
+.about-container {
+  padding: 0 66px;
+}
+
+.about__title {
+  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 1.65;
+}
+
+.about__list {
+  display: flex;
+  text-align: center;
+  margin-left: -70px;
+}
+
+.about__item {
+  margin-left: 70px;
+  width: calc((100% - 210px) / 3);
+}
+
+.about__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 67px;
+  height: 67px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}

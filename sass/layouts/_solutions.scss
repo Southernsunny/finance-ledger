@@ -1,0 +1,46 @@
+/*^ solutions */
+.solutions {
+  padding: 0;
+  width: 100%;
+}
+
+.solutions__container {
+  display: flex;
+  padding: 0;
+}
+
+.solutions__content {
+  padding: 80px 40px;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+
+.solutions__pre-title {
+  margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 1.65;
+}
+
+.solutions__title {
+  margin-bottom: 26px;
+  @include font(300, 38px, 1.26);
+}
+
+.solutions__btn {
+  @include centeredBtn;
+
+  margin-top: 17px;
+  padding: 10px 40px;
+  color: var(--secondary-text-color);
+  background-color: transparent;
+  border: 1px solid var(--secondary-text-color);
+  border-radius: 5px;
+  cursor: pointer;
+  @include transitionX2(box-shadow, text-shadow);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 0px 5px 0px var(--white-bg-color);
+    text-shadow: var(--secondary-text-color) 0 0 5px;
+  }
+}

@@ -1,0 +1,31 @@
+/*^ business cases */
+.business-container {
+  padding: 0 30px;
+  text-align: center;
+}
+
+.business__pre-title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 1.65;
+}
+
+.business__title {
+  margin-bottom: 34px;
+  @include font(300, 38px, 1.26);
+}
+
+.business__list {
+  margin-top: 39px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-bottom: -8px;
+}
+
+.business__item {
+  margin-left: 8px;
+  margin-bottom: 8px;
+  width: calc((100% - 32px) / 4);
+}
