@@ -6,17 +6,16 @@
 .callback-container {
   display: flex;
   background-color: var(--secondary-bg-color);
-  padding: 0;
 }
 
 .request {
   width: 100%;
-  padding: 140px 35px 20px 25px;
+  padding: 140px 30px 20px;
 }
 
 .request__title {
   margin-bottom: 34px;
-  @include font (300, 38px, 1.26);
+  @include font(300, 38px, 1.26);
 }
 
 .callback-form {
@@ -26,14 +25,20 @@
 
 .callback-form__input {
   margin-bottom: 36px;
+  height: 40px;
   outline: none;
   background: #ffffff;
   border: 1px solid #f5f5f5;
   border-radius: 0px;
   padding: 5px;
+
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);
-    @include font(400, 14px, 1.14);
+    @include font(400, 16px, 1.44);
+
+    @include tablet {
+      @include font(400, 18px, 1.28);
+    }
     @include desktop {
       @include font(400, 18px, 1.56);
     }
@@ -41,6 +46,7 @@
 }
 
 .callback-form__button {
+  margin-top: 24px;
   padding: 10px 0;
   border-radius: 5px;
   border: 1px solid var(--accent-color);

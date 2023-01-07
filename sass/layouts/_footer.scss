@@ -2,17 +2,16 @@
 .footer {
   background-color: var(--footer-bg-color);
 }
-
-.footer__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-  padding-top: 20px;
-  margin-right: -25px;
+.footer-container {
+  padding: 20px 0;
 }
 
-.footer__item {
+.footer__list {
+  @include centeredFlex;
+  margin-bottom: 10px;
+}
+
+.footer__item:not(:last-child) {
   margin-right: 25px;
 }
 
@@ -22,6 +21,5 @@
 
 .copyright {
   text-align: center;
-  padding-bottom: 16px;
   color: var(--secondary-text-color);
 }

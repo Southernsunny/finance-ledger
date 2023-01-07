@@ -18,18 +18,15 @@
 }
 
 .hero__text {
-  font-size: 22px;
-  line-height: 1.67;
+  @include font(400, 22px, 1.67);
   color: var(--hero-text-color);
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
 
 .hero__btn {
   @include centeredBtn;
-  
   border-radius: 5px;
   padding: 10px 30px;
-  cursor: pointer;
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
   fill: var(--secondary-text-color);

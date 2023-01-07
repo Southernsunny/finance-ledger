@@ -1,6 +1,6 @@
 /*^ about */
 .about {
-width: 1360px;
+  width: 1360px;
   background-color: var(--secondary-bg-color);
 }
 
@@ -10,8 +10,7 @@ width: 1360px;
 
 .about__title {
   margin-bottom: 16px;
-  font-size: 20px;
-  line-height: 1.65;
+  @include font(400, 20px, 1.65);
 }
 
 .about__list {
@@ -26,9 +25,7 @@ width: 1360px;
 }
 
 .about__icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  @include centeredBtn;
   width: 67px;
   height: 67px;
   margin-bottom: 15px;

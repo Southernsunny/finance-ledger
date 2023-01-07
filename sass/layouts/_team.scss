@@ -5,20 +5,19 @@
 }
 
 .team__pre-title {
-  margin-bottom: 16px;
-  font-size: 20px;
-  line-height: 1.65;
+  margin-bottom: 20px;
+  @include font (400, 20px, 1.65);
 }
 
 .team__title {
-  margin-bottom: 34px;
+  margin-bottom: 35px;
   @include font(300, 38px, 1.26);
 }
 
 .team__list {
   display: flex;
   justify-content: center;
-  margin-top: 45px;
+  margin-top: 40px;
   margin-left: -20px;
 }
 
@@ -29,8 +28,7 @@
 
 .team__name {
   margin: 15px 0;
-  font-size: 25px;
-  line-height: 1.27;
+    @include font (400, 25px, 1.27);
 }
 
 .team__links {

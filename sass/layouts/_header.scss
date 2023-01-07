@@ -4,50 +4,86 @@
 }
 
 .header-container {
-  padding: 0 50px;
+  padding: 0 20px;
+
+  @include tablet {
+    padding: 0 40px;
+  }
+  @include desktop {
+    padding: 0 50px;
+  }
 }
 
 .navigation {
-  display: flex;
-  align-items: center;
+  @include tablet {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+  @include centeredFlex;
   margin-right: auto;
-  @include font(400, 35px, 1.21);
+  margin-bottom: 10px;
+  padding-top: 21px;
+  @include font(400, 32px, 1.32);
   color: var(--secondary-text-color);
+
+  @include tablet {
+    @include font(400, 35px, 1.21);
+    margin-bottom: 0;
+    padding-top: 0;
+  }
 }
 
 .accent {
   color: var(--accent-color);
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .icon-logo {
-  margin-right: 10px;
+  margin-right: 5px;
+
+  @include tablet {
+    margin-right: 10px;
+  }
 }
 
 .navigation__list {
-  display: flex;
-  align-items: center;
+  @include centeredFlex;
+}
+
+.navigation__item {
+  @include font(400, 16px, 1.6);
+  @include tablet {
+    @include font(400, 18px, 1.56);
+    margin: 0;
+  }
 }
 
 .navigation__item:not(:last-child) {
-  margin-right: 38px;
+  margin-right: 12px;
+
+  @include tablet {
+    margin-right: 18px;
+  }
+  @include desktop {
+    margin-right: 38px;
+  }
 }
 
 .navigation__link {
   position: relative;
   display: block;
-  padding: 21px 0;
   color: var(--secondary-text-color);
   @include transition(color);
 
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+  @include tablet {
+    padding: 21px 0;
   }
 }
 
