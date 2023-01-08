@@ -1,12 +1,18 @@
 /*^ team */
 .team-container {
   text-align: center;
-  padding: 0 30px;
+  padding: 0 20px;
+  @include tablet {
+    padding: 0 30px;
+  }
 }
 
 .team__pre-title {
   margin-bottom: 20px;
-  @include font (400, 20px, 1.65);
+  @include font(400, 20px, 1.65);
+  @include tablet {
+    @include font(400, 18px, 1.66);
+  }
 }
 
 .team__title {
@@ -14,21 +20,49 @@
   @include font(300, 38px, 1.26);
 }
 
+.team__text {
+  @include font(400, 18px, 1.56);
+  @include tablet {
+    @include font(400, 16px, 1.6);
+  }
+}
+
 .team__list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 40px;
   margin-left: -20px;
 }
 
 .team__item {
   margin-left: 20px;
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+.team__item:not(:last-child) {
+  margin-bottom: 15px;
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 .team__name {
   margin: 15px 0;
-    @include font (400, 25px, 1.27);
+  @include font(400, 23px, 1.25);
+  @include tablet {
+    @include font(400, 25px, 1.27);
+  }
+}
+
+.team__position {
+  @include font(400, 16px, 1.6);
+  @include tablet {
+    @include font(400, 18px, 1.56);
+  }
 }
 
 .team__links {
@@ -37,7 +71,7 @@
 
 .social-media {
   position: absolute;
-    opacity: 0;
+  opacity: 0;
   @include centeredPosition;
   @include centeredFlex;
   @include transition(opacity);

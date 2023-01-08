@@ -13,9 +13,9 @@
   margin: 0 auto;
   // outline: 1px solid yellow;
 
-  @include mobile {
-    width: 320px;
-  }
+  // @include mobile {
+  //   width: 320px;
+  // }
   @include tablet {
     width: 768px;
   }

@@ -113,11 +113,30 @@
       <!-- solutions -->
       <section class="solutions section">
         <div class="solutions__container container">
-          <img src="./images/solutions.jpg" alt="people" width="680" />
+          <picture>
+            <source
+              srcset="./images/solutions.jpg 1x, ./images/solutions-2x.jpg 2x"
+              media="(min-width:1360px)"
+            />
+            <source
+              srcset="./images/solutions-tab.jpg 1x, ./images/solutions-tab-2x.jpg 2x"
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="./images/solutions-mob.jpg 1x, ./images/solutions-mob-2x.jpg 2x"
+              media="(min-width:320px)"
+            />
+            <img
+              srcset="./images/solutions.jpg 1x, ./images/solutions-2x.jpg 2x"
+              src="./images/solutions.jpg"
+              alt="people"
+              width="680"
+            />
+          </picture>
           <div class="solutions__content">
             <p class="solutions__pre-title">What you are looking for</p>
             <h2 class="solutions__title">We provide bespoke solutions</h2>
-            <p>
+            <p class="solutions__text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
               quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
               itaque rerum temporibus doloribus iste maiores deleniti?
@@ -151,17 +170,36 @@
       <!-- blog -->
       <section class="blog">
         <div class="blog-container container">
+          <picture>
+            <source
+              srcset="./images/blog.jpg 1x, ./images/blog-2x.jpg 2x"
+              media="(min-width:1360px)"
+            />
+            <source
+              srcset="./images/blog-tab.jpg 1x, ./images/blog-tab-2x.jpg 2x"
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="./images/blog-mob.jpg 1x, ./images/blog-mob-2x.jpg 2x"
+              media="(min-width:320px)"
+            />
+            <img
+              srcset="./images/blog.jpg 1x, ./images/blog-2x.jpg 2x"
+              src="./images/blog.jpg"
+              alt="blog"
+              width="680"
+            />
+          </picture>
           <div class="blog__content">
             <p class="blog__pre-title">April 16 2020</p>
             <h2 class="blog__title">Blog Post One</h2>
-            <p>
+            <p class="blog__text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, ipsum dignissimos
               quae laudantium asperiores nam aliquid impedit harum illum dolore explicabo ab dolores
               itaque rerum temporibus doloribus iste maiores deleniti?
             </p>
             <a href="" class="blog__btn link">Read Our Blog</a>
           </div>
-          <img src="./images/blog.jpg" alt="" width="680" />
         </div>
       </section>
 
@@ -207,7 +245,7 @@
                 </ul>
               </div>
               <h3 class="team__name">John Doe</h3>
-              <p>President</p>
+              <p class="team__position">President</p>
             </li>
             <li class="team__item">
               <div class="team__links">
@@ -244,7 +282,7 @@
                 </ul>
               </div>
               <h3 class="team__name">Jane Doe</h3>
-              <p>Vice President</p>
+              <p class="team__position">Vice President</p>
             </li>
             <li class="team__item">
               <div class="team__links">
@@ -281,16 +319,35 @@
                 </ul>
               </div>
               <h3 class="team__name">Steve Smith</h3>
-              <p>Marketing Head</p>
+              <p class="team__position">Marketing Head</p>
             </li>
           </ul>
         </div>
       </section>
 
       <!-- callback -->
-      <section class="callback section">
+      <section class="callback">
         <div class="callback-container container">
-          <img src="./images/callback.jpg" alt="" width="680" />
+          <picture>
+            <source
+              srcset="./images/callback.jpg 1x, ./images/callback-2x.jpg 2x"
+              media="(min-width:1360px)"
+            />
+            <source
+              srcset="./images/callback-tab.jpg 1x, ./images/callback-tab-2x.jpg 2x"
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="./images/callback-mob.jpg 1x, ./images/callback-mob-2x.jpg 2x"
+              media="(min-width:320px)"
+            />
+            <img
+              srcset="./images/callback.jpg 1x, ./images/callback-2x.jpg 2x"
+              src="./images/callback.jpg"
+              alt="callback"
+              width="680"
+            />
+          </picture>
           <div class="request">
             <h2 class="request__title">Request Callback</h2>
 

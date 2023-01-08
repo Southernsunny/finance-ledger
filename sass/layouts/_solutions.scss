@@ -4,29 +4,55 @@
 }
 
 .solutions__container {
-  display: flex;
+  @include tablet {
+    display: flex;
+  }
 }
 
 .solutions__content {
-  padding: 90px 37px;
+  padding: 30px;
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
+  @include tablet {
+    width: 384px;
+    padding: 30px 35px;
+  }
+  @include desktop {
+    padding: 80px 37px;
+    width: 680px;
+  }
 }
 
 .solutions__pre-title {
   margin-bottom: 5px;
+  @include font(400, 18px, 1.66);
+  @include tablet {
     @include font(400, 20px, 1.65);
+  }
 }
 
 .solutions__title {
   margin-bottom: 25px;
+  width: 204px;
   @include font(300, 38px, 1.26);
+  @include desktop {
+    width: auto;
+  }
+}
+
+.solutions__text {
+  margin-bottom: 15px;
+  @include font(400, 16px, 1.6);
+  @include tablet {
+    margin-bottom: 20px;
+    @include font(400, 18px, 1.56);
+  }
 }
 
 .solutions__btn {
   @include centeredBtn;
-  margin-top: 18px;
   padding: 10px 40px;
+  @include font(400, 16px, 1.6);
   color: var(--secondary-text-color);
   background-color: transparent;
   border: 1px solid var(--secondary-text-color);
@@ -37,5 +63,9 @@
   &:focus {
     box-shadow: 0px 0px 5px 0px var(--white-bg-color);
     text-shadow: var(--secondary-text-color) 0 0 5px;
+  }
+
+  @include tablet {
+    @include font(400, 18px, 1.56);
   }
 }

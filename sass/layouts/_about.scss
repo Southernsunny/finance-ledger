@@ -1,34 +1,75 @@
 /*^ about */
 .about {
-  width: 1360px;
-  background-color: var(--secondary-bg-color);
+  width: 320px;
+  background-color: var(--white-bg-color);
+  @include tablet {
+    width: 768px;
+  }
+  @include desktop {
+    width: 1360px;
+    background-color: var(--secondary-bg-color);
+  }
 }
 
 .about-container {
-  padding: 0 66px;
+  padding: 0 30px;
+  @include tablet {
+    padding: 0 55px;
+  }
+  @include desktop {
+    padding: 0 66px;
+  }
 }
 
 .about__title {
-  margin-bottom: 16px;
-  @include font(400, 20px, 1.65);
+  margin-bottom: 15px;
+  @include font(400, 18px, 1.66);
+
+  @include tablet {
+    margin-bottom: 16px;
+    @include font(400, 20px, 1.65);
+  }
 }
 
 .about__list {
-  display: flex;
   text-align: center;
-  margin-left: -70px;
+  @include tablet {
+    display: flex;
+    margin-left: -51px;
+  }
+  @include desktop {
+    margin-left: -71px;
+  }
 }
 
 .about__item {
-  margin-left: 70px;
-  width: calc((100% - 210px) / 3);
+  @include tablet {
+    margin-left: 50px;
+    width: calc((100% - 150px) / 3);
+  }
+  @include desktop {
+    margin-left: 70px;
+    width: calc((100% - 210px) / 3);
+  }
+}
+
+.about__item:not(:last-child) {
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+  }
 }
 
 .about__icon {
   @include centeredBtn;
-  width: 67px;
-  height: 67px;
-  margin-bottom: 15px;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
   border-radius: 50%;
   background-color: var(--accent-color);
+
+  @include tablet {
+    width: 67px;
+    height: 67px;
+    margin-bottom: 15px;
+  }
 }

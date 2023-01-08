@@ -1,27 +1,49 @@
 /*^ blog */
 .blog-container {
-  display: flex;
+  @include tablet {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 .blog__content {
-  padding: 112px 37px;
+  padding: 30px;
   color: var(--secondary-text-color);
   background-color: var(--accent-bg-color);
+  @include tablet {
+    width: 384px;
+    padding: 30px 35px;
+  }
+  @include desktop {
+    padding: 100px 37px;
+    width: 680px;
+  }
 }
 
 .blog__pre-title {
   margin-bottom: 5px;
-  @include font (400, 20px, 1.65);
+  @include font(400, 18px, 1.66);
+  @include tablet {
+    @include font(400, 20px, 1.65);
+  }
 }
 
 .blog__title {
   margin-bottom: 25px;
-  @include font (300, 38px, 1.26);
+  @include font(300, 38px, 1.26);
+}
+
+.blog__text {
+  margin-bottom: 15px;
+  @include font(400, 16px, 1.6);
+  @include tablet {
+    margin-bottom: 20px;
+    @include font(400, 18px, 1.56);
+  }
 }
 
 .blog__btn {
   @include centeredBtn;
-  margin-top: 25px;
   padding: 10px 40px;
   color: var(--secondary-text-color);
   background-color: transparent;
@@ -33,5 +55,8 @@
   &:focus {
     box-shadow: 0px 0px 5px 0px var(--white-bg-color);
     text-shadow: var(--secondary-text-color) 0 0 5px;
+  }
+  @include tablet {
+    @include font(400, 18px, 1.56);
   }
 }

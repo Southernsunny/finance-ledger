@@ -7,11 +7,21 @@
 .business__pre-title {
   margin-bottom: 20px;
   @include font(400, 20px, 1.65);
+  @include tablet {
+    @include font(400, 18px, 1.66);
+  }
 }
 
 .business__title {
   margin-bottom: 35px;
   @include font(300, 38px, 1.26);
+}
+
+.business__text {
+  @include font(400, 18px, 1.56);
+  @include tablet {
+    @include font(400, 16px, 1.6);
+  }
 }
 
 .business__list {
@@ -20,10 +30,16 @@
   flex-wrap: wrap;
   margin-left: -8px;
   margin-bottom: -8px;
+  @include tablet {
+  }
 }
 
 .business__item {
   margin-left: 8px;
   margin-bottom: 8px;
-  width: calc((100% - 32px) / 4);
+  width: 100%;
+
+  @include tablet {
+    width: calc((100% - 32px) / 4);
+  }
 }

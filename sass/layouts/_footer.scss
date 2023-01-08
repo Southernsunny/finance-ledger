@@ -21,5 +21,10 @@
 
 .copyright {
   text-align: center;
+  @include font(400, 16px, 1.6);
   color: var(--secondary-text-color);
+
+  @include tablet {
+    @include font(400, 18px, 1.56);
+  }
 }
